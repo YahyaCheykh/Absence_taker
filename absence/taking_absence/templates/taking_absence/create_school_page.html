@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create school</title>
+</head>
+<body>
+
+<h1>Create School</h1>
+<form action="/create_school_logic" method="post">
+    {% csrf_token %}
+    <label>Name:</label><br>
+    {{ form.name }}<br><br>
+    <label>Email:</label><br>
+    {{ form.email }}<br><br>
+    <label>Password:</label><br>
+    {{ form.password }}<br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
